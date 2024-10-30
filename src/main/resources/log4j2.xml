@@ -2,7 +2,12 @@
 <Configuration status="WARN">
     <Appenders>
         <Console name="ConsoleAppender" target="SYSTEM_OUT">
-            <PatternLayout pattern="%d{yyyy-MM-dd HH:mm:ss} %-5p %c{1} - %m%n" />
+            <JsonLayout complete="false" compact="true" eventEol="true" 
+                       locationInfo="true" 
+                       properties="true" 
+                       includeLoggerName="true"
+                       includeContextMap="true">
+            </JsonLayout>
         </Console>
     </Appenders>
 
